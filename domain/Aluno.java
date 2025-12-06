@@ -15,6 +15,11 @@ public class Aluno implements Comparable<Aluno>{
         this.nota = nota;
     }
 
+    public Aluno(String nome, String curso, double nota, String sala) {
+        this(nome, curso, nota);
+        this.sala = sala;
+    }
+
     public Aluno(String sala) {
         this.sala = sala;
     }
